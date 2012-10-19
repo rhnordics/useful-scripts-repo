@@ -1,0 +1,11 @@
+
+Using another github project to deploy
+$ rhc app create -a [name] -t jbossas-7
+$ cd [name]
+$ git remote add upstream -m master git://github...
+$ git pull -s recursive -X theirs upstream master
+$ git push
+
+
+
+Jimmy Gerero (Marketing Openshift) 
